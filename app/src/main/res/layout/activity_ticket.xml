@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3pt"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    tools:context=".ticket">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10pt"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF494444"
+            android:hint="Title"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/tv_Content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Content"
+            android:paddingLeft="10pt"
+            android:textSize="8pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                   android:id="@+id/btn_edit"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/baseline_edit_note_black_24" />
+
+            <ImageView
+                android:id="@+id/btn_delete"
+                android:layout_width="40pt"
+                android:layout_height="20pt"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/baseline_delete_black_24" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
